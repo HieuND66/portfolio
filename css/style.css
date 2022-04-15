@@ -30,6 +30,7 @@ body.dark{
    --inner-shadow: inset 3px 3px 3px #222327, inset -3px -3px 3px #363636;
    --inner-shadow-0: inset 0 0 0 #222327, inset 0 0 0 #363636;
 }
+
 body {
    font-size: 16px;
    line-height: 1.5;
