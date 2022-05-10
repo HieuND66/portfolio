@@ -2,17 +2,19 @@
    const hamburger = document.querySelector(".hamburger-btn"),
    navMenu = document.querySelector(".nav-menu"),
    closeNavBtn = navMenu.querySelector(".close-nav-menu");
-   hamburger.addEventListener("click", showNav);
-   closeNavBtn.addEventListener("click", hidenNavMenu);
+  hamburger.addEventListener("click", showNav)
+  closeNavBtn.addEventListener('click', hidenNavMenu)
    function showNav(){
      navMenu.classList.add("open");
      bodyScrollingToggle();
    }
+
    function hidenNavMenu(){
-     navMenu.classList.remove("open");
-     fadeOutEffect();
-     bodyScrollingToggle();
+    navMenu.classList.remove('open')
+    fadeOutEffect();
+    bodyScrollingToggle();
    }
+
    function fadeOutEffect(){
     document.querySelector(".fade-out-effect").classList.add("active");
     setTimeout(()=>{
@@ -55,7 +57,7 @@
       }
     }
   })
- })();
+ }) ();
 
 
 
@@ -153,6 +155,7 @@
      const imgSrc = screenshots[slideIndex];
      const popupImg = popup.querySelector(".pp-img");
      // acticve loader until the popupImg loaded
+
      popup.querySelector(".pp-loader").classList.add("active");
      popupImg.src = imgSrc;
      popupImg.onload = () => {

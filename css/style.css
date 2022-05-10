@@ -997,6 +997,8 @@ navigation  menu*/
    border-radius: 5px;
    width: 100%;
    transition: all 0.3s ease;
+   height: 180px;
+   object-fit: cover;
 }
 
 .portfolio-section .portfolio-item-img {
